@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header{
+
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: aliceblue;
+}
+
+.navBarContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  padding: 1.2rem 1.5rem;
+  /* position: sticky;
+  top: 0;
+  z-index: 3; */
+}
+.logo{
+  font-weight: bolder;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.sideNavContainer{
+
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+
+}
+.sideNavContainer a ,.dateAndTag a ,.dateAndtagContainer a{
+
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s ease-in;
+}
+.sideNavContainer a:hover ,.dateAndTag a:hover ,.dateAndtagContainer a:hover{
+  cursor:pointer;
+  text-decoration: underline;
+  color: red;
+  transition-timing-function: ease-out;
+
+}
+
+/* =======================================Main Body ========================================== */
+
+/* ============================Hero Conyainer and long establish container =========================== */
+.heroContainer , .longEstablishContainer ,.loremIpsumDivContainer{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3rem;
+
+}
+.heroContentContainer ,.longEstablishContentContainer ,.loremIpsumContentContainer{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.dateAndTag ,.dateAndtagContainer{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.heroImageContainer img{
+  border-radius: 1.2rem;
+}
+
+
+
+/* ======================================Cards Container ===================================== */
+.cardsContainer{
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,2fr));
+  gap: 4rem;
+  padding: 1.5rem;
+
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+
+}
+.imageContainer img{
+  width: 100%;
+  border-radius: 5px;
+}
+.contentContainer{
+
+  padding: 3rem 1rem 1rem 1rem;
+  line-height: 1.3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ==============================Footer Side Bar css Bakii sab upr set hai =========================== */
+.divider{
+  border: 1px solid grey;
+}
+.footerContainer{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  padding: 1.2rem 1.5rem;
+}
+
+.sideFooterContainer{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem;
+  gap: 2rem;
+}
+
+
+
+/* ============================================Post Page CSS========================================= */
+.imageContainer{
+  margin: 1rem;
+}
+.imageContainer img{
+  max-width: 100%;
+  
+}
+
+.heroContentDivContainer{
+  padding: 1rem;
+}
+.authorAndDateContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.articelsSectionDivContainer{
+  padding: 1.5rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.articelsSectionDivContainer p{
+  padding-block: 1rem;
+}
+
+
+
+
+
+/* ========================================Responsiveness Home Page ========================================== */
+@media screen and (max-width:830px) {
+  .heroContainer , .loremIpsumDivContainer{
+    flex-wrap: wrap-reverse;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  
+}
+@media screen  and (max-width:730px) {
+  .longEstablishContainer{
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+}
+@media screen and (max-width:580px) {
+  .heroImageContainer img , .loremIpsumDivContainer img {
+    max-width: 100%;
+
+  }
+  .longEstablishContainer img{
+    max-width: 100%;
+  }
+  
+}
+@media screen  and (max-width:480px) {
+  .navBarContainer , .footerContainer{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
